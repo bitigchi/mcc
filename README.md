@@ -9,6 +9,7 @@ To use:
 
 ## Options:
 `-c, --copy`            Copies output to clipboard
+
 `-w, --withoutSpace`    Removes whitespace from output code
 
 ## Installing:

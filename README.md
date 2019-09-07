@@ -7,15 +7,16 @@ Supports basic and extended morse codes.
 To use:
     $ mcc convert <option> <option> "text to convert"
 
-## Options:
+### Options:
 `-c, --copy`            Copies output to clipboard
 
 `-w, --withoutSpace`    Removes whitespace from output code
 
-## Installing:
+### Installing:
+
     $ git clone https://github.com/bitigchi/mcc.git
     $ cd mcc
     $ make
 
-## Author:
+### Author:
 Emir Sarı, bitigchi@me.com

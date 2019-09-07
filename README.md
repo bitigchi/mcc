@@ -13,7 +13,7 @@ To use:
 
 `-w, --withoutSpace`    Removes whitespace from output code
 
-### Install:
+### Install:
 
     $ git clone https://github.com/bitigchi/mcc.git
     $ cd mcc

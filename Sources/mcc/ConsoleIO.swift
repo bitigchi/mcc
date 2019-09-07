@@ -1,10 +1,6 @@
-//
-//  ConsoleIO.swift
-//  Morse Code Converter
-//
-//  Created by Emir SARI on 28.08.2019.
-//  Copyright © 2019 Emir SARI. All rights reserved.
-//
+// ConsoleIO.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import Foundation
 

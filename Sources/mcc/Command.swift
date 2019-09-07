@@ -1,9 +1,6 @@
-//
-//  ArgumentParser+Add.swift
-//  mcc
-//
-//  Created by Emir SARI on 2.09.2019.
-//
+// Command.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import SPMUtility
 import Basic

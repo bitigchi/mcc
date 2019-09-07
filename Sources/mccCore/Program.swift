@@ -1,9 +1,6 @@
-//
-//  mccCore.swift
-//  Basic
-//
-//  Created by Emir SARI on 2.09.2019.
-//
+// Program.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import AppKit
 

@@ -1,9 +1,6 @@
-//
-//  ConvertCommand.swift
-//  mcc
-//
-//  Created by Emir SARI on 6.09.2019.
-//
+// ConvertCommand.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import SPMUtility
 import Basic

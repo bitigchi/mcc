@@ -1,9 +1,6 @@
-//
-//  MorseCodeList.swift
-//  Basic
-//
-//  Created by Emir SARI on 5.09.2019.
-//
+// MorseCodeList.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import Foundation
 

@@ -1,9 +1,6 @@
-//
-//  CommandRegistry.swift
-//  mcc
-//
-//  Created by Emir SARI on 6.09.2019.
-//
+// CommandRegistry.swift
+// Author: Emir Sarı
+// See LICENSE for details
 
 import SPMUtility
 import Basic

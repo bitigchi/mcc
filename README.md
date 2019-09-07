@@ -5,6 +5,7 @@ A basic text-to-morse converter for the command line, written in Swift.
 Supports basic and extended morse codes.
 
 To use:
+
     $ mcc convert <option> <option> "text to convert"
 
 ### Options:
@@ -12,7 +13,7 @@ To use:
 
 `-w, --withoutSpace`    Removes whitespace from output code
 
-### Installing:
+### Install:
 
     $ git clone https://github.com/bitigchi/mcc.git
     $ cd mcc

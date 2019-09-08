@@ -15,8 +15,7 @@ public struct Program {
         if copy {
             copyToClipboard(textToCopy: conversionResult)
         }
-        print("\n\(textToConvert) in morse:")
-        return conversionResult
+        return "\n" + textToConvert + " in morse: " + conversionResult + "\n"
     }
     
     func copyToClipboard(textToCopy: String) {

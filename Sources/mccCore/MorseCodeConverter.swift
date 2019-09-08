@@ -19,7 +19,7 @@ public struct MorseCodeConverter {
         let textWithoutFancyQuotes = textWithoutFancyDoubleQuotes.replaceSingleQuotes(textWithoutFancyDoubleQuotes, singleQuotesArray: singleQuotesArray)
         let textWithoutFancyQuotesHyphensAndDashes = textWithoutFancyQuotes.replaceHyphensAndDashes(textWithoutFancyQuotes, hyphensAndDashesArray: hyphensAndDashesArray)
         
-        var morseText = "\n"
+        var morseText = ""
         let characterArray = textWithoutFancyQuotesHyphensAndDashes.lowercased().map { String($0) }
         
         for character in characterArray {
@@ -34,7 +34,7 @@ public struct MorseCodeConverter {
                 }
             }
         }
-        return morseText.isEmpty ? textToConvert : morseText + "\n"
+        return morseText.isEmpty ? textToConvert : morseText
     }
 }
 

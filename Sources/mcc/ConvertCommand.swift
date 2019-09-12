@@ -21,9 +21,7 @@ struct ConvertCommand: Command {
     
     init(parser: ArgumentParser) {
         let subparser = parser.add(subparser: command, overview: overview)
-        
-        // TODO: When used with subparser.add, for some reason it does not display the SPM-default "OPTIONS"
-        // section at application CLI help display. parser.add displays info correctly but arguments cease to function
+
         copy = subparser.add(option: "--copy", shortName: "-c", kind: Bool.self, usage: "Copies output to clipboard")
         withoutSpace = subparser.add(option: "--withoutSpace", shortName: "-w", kind: Bool.self, usage: "Omits whitespace from result")
         

@@ -22,7 +22,7 @@ Supports basic and extended morse codes and conversion from Latin texts.
 
 ### Known Limitations
 - To convert double quotes, either use curly quotes or type plain double quotes with `\"`
-- To convert an exclamation mark, add a "\" before the exclamation mark
+- To convert an exclamation mark, add a \ before the exclamation mark
 
 ### Author:
 Emir Sarı, bitigchi@me.com

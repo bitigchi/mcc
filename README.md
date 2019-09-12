@@ -3,6 +3,7 @@
 A basic text-to-morse converter for the command line, written in Swift.
 
 Supports basic and extended morse codes and conversion from Latin texts.
+![Screenshot](/.github/screenshot.png)
 
 #### To use:
 

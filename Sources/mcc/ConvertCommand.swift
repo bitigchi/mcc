@@ -18,6 +18,7 @@ struct ConvertCommand: Command {
     private let textToConvert: PositionalArgument<String>
     
     // Initializer for the command options
+    
     init(parser: ArgumentParser) {
         let subparser = parser.add(subparser: command, overview: overview)
         

@@ -10,7 +10,7 @@ struct ConvertCommand: Command {
     let command = "convert"
     let overview = "Converts the given text to morse code"
     
-    let program = Program()
+    let program = mccCore()
     let consoleIO = ConsoleIO()
     
     private let copy: OptionArgument<Bool>

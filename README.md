@@ -14,12 +14,6 @@ Supports basic and extended morse codes and conversion from Latin texts.
 
 `-w, --withoutSpace`    Removes whitespace from output code
 
-### Install:
-
-    $ git clone https://github.com/bitigchi/mcc.git
-    $ cd mcc
-    $ make
-
 ### Known Limitations
 - To convert double quotes, either use curly quotes or type plain double quotes with `\"`
 - To convert an exclamation mark, add a \ before the exclamation mark

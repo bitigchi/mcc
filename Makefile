@@ -2,13 +2,16 @@ prefix = ${HOME}
 bindir ?= $(prefix)/bin
 srcdir = Sources
 
+PROJECT ?= mcc
 REPODIR = $(shell pwd)
-BUILDDIR =$(REPODIR)/.build
+BUILDDIR = $(REPODIR)/.build
+RELEASEDIR = $(BUILDDIR)/release/$(PROJECT)
 SOURCES = $(wildcard $(srcdir)/**/*.swift)
+VERSION = 0.1.6
 
 mcc: $(SOURCES)
 	@echo "Building Swift package..."
-	@swift build 
+	@swift build --disable-sandbox -c release
 	@echo "Build complete."
 
 test: mcc
@@ -18,7 +21,7 @@ test: mcc
 install: mcc
 	@echo "Installing mcc..."
 	install -d "$(bindir)"
-	install "$(BUILDDIR)/debug/mcc" "$(bindir)"
+	install "$(RELEASEDIR)" "$(bindir)"
 
 uninstall:
 	@echo "Uninstalling mcc..."

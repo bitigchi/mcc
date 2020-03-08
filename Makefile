@@ -27,6 +27,9 @@ uninstall:
 	@echo "Uninstalling mcc..."
 	rm  "$(bindir)/mcc"
 
+xcode:
+	swift package generate-xcodeproj
+
 .PHONY:
 clean:
 	@echo "Cleanup"

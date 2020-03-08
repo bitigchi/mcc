@@ -5,18 +5,23 @@ A basic text-to-morse converter for the command line, written in Swift.
 Supports basic and extended morse codes and conversion from Latin texts.
 ![Screenshot](/.github/screenshot.png)
 
-#### To use:
+```
+OVERVIEW: Simple text-to-morse converter
 
-    $ mcc convert <option> <option> "text to convert"
+USAGE: mcc <text> [--copy] [--whitespace]
 
-### Options:
-`-c, --copy`            Copies output to clipboard
+ARGUMENTS:
+  <text>                  The text to convert 
 
-`-w, --withoutSpace`    Removes whitespace from output code
+OPTIONS:
+  -c, --copy              Copy output to clipboard (macOS only) 
+  -w, --whitespace        Strip whitespace from output 
+  -h, --help              Show help information.
+```
 
 ### Known Limitations
-- To convert double quotes, either use curly quotes or type plain double quotes with `\"`
-- To convert an exclamation mark, add a \ before the exclamation mark
+- You need to use terminal escape characters to display certain characters (", ! etc.)
+- Clipboard is only usable on macOS for the moment
 
 ### Author:
 Emir Sarı, bitigchi@me.com

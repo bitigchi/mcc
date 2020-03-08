@@ -17,6 +17,9 @@ struct Mcc: ParsableCommand {
     @Flag(name: .shortAndLong, help: "Copy output to clipboard (macOS only)")
     var copy: Bool
     
+    @Flag(name: .shortAndLong, help: "Only display morse output")
+    var morseOnly: Bool
+    
     @Flag(name: .shortAndLong, help: "Strip whitespace from output")
     var whitespace: Bool
     
@@ -26,7 +29,8 @@ struct Mcc: ParsableCommand {
         
         let result = program.executeProgramFunction(textToConvert: text,
                                        withoutSpace: whitespace,
-                                       copy: copy)
+                                       copy: copy,
+                                       morseOnly: morseOnly)
         consoleIO.writeMessage(result)
     }
 }

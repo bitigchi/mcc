@@ -19,8 +19,19 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
+### Install
+
+On the source directory, run `make install`. This will install `mcc` to your
+home directory. If you haven't added your home directory to your `$PATH`, do
+so by adding `export PATH=~/bin:$PATH` to your shell configuration file.
+
+### Uninstall
+
+Run `make uninstall`
+
 ### Known Limitations
-- You need to use terminal escape characters to display certain characters (", ! etc.)
+- You need to use terminal escape characters to display certain characters
+  (", ! etc.)
 - Clipboard is only usable on macOS for the moment
 
 ### Author:

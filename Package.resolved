@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/bitigchi/mccCore.git",
         "state": {
           "branch": null,
-          "revision": "190e8d04b263e46068ff7fed12fcd5f3b024d89b",
-          "version": "0.1.3"
+          "revision": "c5522711887762eb1a28025c71acf70683e75c0d",
+          "version": "0.1.5"
         }
       },
       {
@@ -15,26 +15,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": null,
-          "revision": "35b76bf577d3cc74820f8991894ce3bcdf024ddc",
-          "version": "0.0.2"
-        }
-      },
-      {
-        "package": "llbuild",
-        "repositoryURL": "https://github.com/apple/swift-llbuild.git",
-        "state": {
-          "branch": null,
-          "revision": "f73b84bc1525998e5e267f9d830c1411487ac65e",
-          "version": "0.2.0"
-        }
-      },
-      {
-        "package": "SwiftPM",
-        "repositoryURL": "https://github.com/apple/swift-package-manager.git",
-        "state": {
-          "branch": null,
-          "revision": "9abcc2260438177cecd7cf5185b144d13e74122b",
-          "version": "0.5.0"
+          "revision": "9f04d1ff1afbccd02279338a2c91e5f27c45e93a",
+          "version": "0.0.5"
         }
       }
     ]

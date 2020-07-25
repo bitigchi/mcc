@@ -22,17 +22,17 @@ struct Mcc: ParsableCommand {
     @Flag(name: .shortAndLong, help: ArgumentHelp(NSLocalizedString(
         "Copy output to clipboard (macOS only)",
         comment: "Argument help")))
-    var copy: Bool
+    var copy = false
     
     @Flag(name: .shortAndLong, help: ArgumentHelp(NSLocalizedString(
         "Only display morse output",
         comment: "Argument help")))
-    var morseOnly: Bool
+    var morseOnly = false
     
     @Flag(name: .shortAndLong, help: ArgumentHelp(NSLocalizedString(
         "Strip whitespace from output",
         comment: "Argument help")))
-    var whitespace: Bool
+    var whitespace = false
     
     func run() throws {
         let program = mccCore()

@@ -1,4 +1,4 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -6,7 +6,7 @@ let package = Package(
     name: "mcc",
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser",
-                 from: "0.0.1"),
+                 from: "0.2.0"),
         .package(url: "https://github.com/bitigchi/mccCore.git",
                  from: "0.1.4")
     ],
@@ -18,7 +18,8 @@ let package = Package(
                          package: "mccCore"),
                 .product(name: "ArgumentParser",
                          package: "swift-argument-parser")
-        ]),
+            ]
+        ),
         .testTarget(
             name: "mccTests",
             dependencies: ["mcc"]),

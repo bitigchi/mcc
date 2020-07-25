@@ -4,7 +4,7 @@
 // See LICENSE for details
 
 import ArgumentParser
-import mccCore
+import MccCore
 import Foundation
 
 struct Mcc: ParsableCommand {
@@ -15,7 +15,7 @@ struct Mcc: ParsableCommand {
               version: "morse code converter, " +
                 NSLocalizedString("version ",
                                   bundle: program.bundle ?? .module,
-                                  comment: "Version info") + "0.1.8")
+                                  comment: "Version info") + "0.1.9")
     
     @Argument(help: ArgumentHelp(NSLocalizedString(
                                     "The text to convert.",
@@ -42,10 +42,10 @@ struct Mcc: ParsableCommand {
     var whitespace = false
     
     func run() throws {
-        let program = mccCore()
+        let core = MccCore()
         let consoleIO = ConsoleIO()
         
-        let result = program.executeProgramFunction(textToConvert: text,
+        let result = core.executeProgramFunction(textToConvert: text,
                                        withoutSpace: whitespace,
                                        copy: copy,
                                        morseOnly: morseOnly)

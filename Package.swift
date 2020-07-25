@@ -8,15 +8,15 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser",
                  from: "0.2.0"),
-        .package(url: "https://github.com/bitigchi/mccCore.git",
+        .package(url: "https://github.com/bitigchi/MccCore.git",
                  from: "0.1.4")
     ],
     targets: [
         .target(
             name: "mcc",
             dependencies: [
-                .product(name: "mccCore",
-                         package: "mccCore"),
+                .product(name: "MccCore",
+                         package: "MccCore"),
                 .product(name: "ArgumentParser",
                          package: "swift-argument-parser")
             ],

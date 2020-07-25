@@ -2,12 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "mccCore",
-        "repositoryURL": "https://github.com/bitigchi/mccCore.git",
+        "package": "MccCore",
+        "repositoryURL": "https://github.com/bitigchi/MccCore.git",
         "state": {
           "branch": null,
-          "revision": "c5522711887762eb1a28025c71acf70683e75c0d",
-          "version": "0.1.5"
+          "revision": "9a2bb36360f2d606530474094d56607da0f2292c",
+          "version": "0.1.6"
         }
       },
       {

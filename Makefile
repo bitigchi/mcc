@@ -3,12 +3,15 @@ bindir ?= $(prefix)/bin
 srcdir = Sources
 
 PROJECT ?= mcc
+CORELIB ?= MccCore
+ARCH ?= x86_64-apple-macosx
 REPODIR = $(shell pwd)
 BUILDDIR = $(REPODIR)/.build
 RELEASEDIR = $(BUILDDIR)/release/$(PROJECT)
 BUNDLEDIR = $(BUILDDIR)/release/$(PROJECT)_$(PROJECT).bundle
+LIBBUNDLEDIR = $(BUILDDIR)/$(ARCH)/release/$(CORELIB)_$(CORELIB).bundle
 SOURCES = $(wildcard $(srcdir)/**/*.swift)
-VERSION = 0.1.7
+VERSION = 0.1.9
 
 mcc: $(SOURCES)
 	@echo "Building Swift package..."
@@ -24,6 +27,7 @@ install: mcc
 	install -d "$(bindir)"
 	install "$(RELEASEDIR)" "$(bindir)"
 	cp -r "$(BUNDLEDIR)" "$(bindir)"
+	cp -r "$(LIBBUNDLEDIR)" "$(bindir)"
 
 uninstall:
 	@echo "Uninstalling mcc..."

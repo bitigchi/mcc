@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "mcc",
+    defaultLocalization: "en",
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser",
                  from: "0.2.0"),
@@ -18,6 +19,9 @@ let package = Package(
                          package: "mccCore"),
                 .product(name: "ArgumentParser",
                          package: "swift-argument-parser")
+            ],
+            resources: [
+                .process("Resources")
             ]
         ),
         .testTarget(

@@ -5,4 +5,9 @@
 
 import Foundation
 
+let program = Program()
 Mcc.main()
+
+
+
+
